@@ -9,14 +9,16 @@ html(lang="es")
     link(rel="stylesheet", href="css/main.css")
     title Undergraduate Program in Economics -  | XYZ University   
   body
+    h1.hide Undergraduate Program in Economics -  | XYZ University 
     header
       .container
         .logo
           img.img-responsive(src="http://placehold.it/200x50?text=Logo", alt="XYZ University Logo")
         .search
-          input(type="search", placeholder="Buscar en en el sitio")
-          input(type="submit", value="Buscar").btn
-    nav(id="navigation").main-nav
+          input(type="search", placeholder="Search on the site")
+          input(type="submit", value="Search").btn
+    nav(id="main-navigation").main-nav
+      h2.hide Main navigation
       .nav-item.main-nav--item: a(href="#") Institution <i class="ion-arrow-down-b"></i>
       .nav-item.main-nav--item: a(href="#") Research
       .nav-item.main-nav--item: a(href="#") Undergraduate <i class="ion-arrow-down-b"></i>
@@ -40,13 +42,15 @@ html(lang="es")
               a(href="#").btn.btn--hero Register
     
     section#course-content
+      h2.hide Course Main Content
       .container
         .main-info
           .breadcrumb
             span <a href="#">Home</a> >
             span <a href="#">Undergraduate Programs</a> >
             span Economics - On Campus
-          section(id="navigation").course-nav
+          section(id="course-navigation").course-nav
+            h3.hide Course Navigation
             .nav-item.course-nav--item.active: a(href="#") General Information
             .nav-item.course-nav--item: a(href="#") Competencies
             .nav-item.course-nav--item: a(href="#") Profile
@@ -55,11 +59,13 @@ html(lang="es")
             .nav-item.course-nav--item.last: a(href="#") Director's Message
           
           .main-info--container
+            h3.hide General Information
             <iframe width="560" height="315" src="https://www.youtube.com/embed/cvq0VgDNwEg" frameborder="0" allowfullscreen></iframe>
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nam error quis, nulla dicta velit eius deserunt vel quaerat explicabo tenetur, voluptatem officia culpa ducimus beatae praesentium. Consequatur officiis, nemo. 
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corporis hic impedit placeat dolores eveniet quibusdam consectetur sed alias, unde similique, vero incidunt numquam culpa pariatur cumque voluptatem tenetur? Provident.
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam blanditiis nesciunt, totam animi quam sit rem! Porro inventore aliquam, architecto cum necessitatibus, accusantium repudiandae distinctio amet dolores, quaerat sapiente odio.
         .news
+          h3.hide News
           .news-item
             img.img-responsive.center(src="http://placehold.it/150x150?text=Imagen+de+la+Noticia", alt="News Image").news-item--img
             h3.news-item--title Students win the ABC prize at the 19th International Economics Congress

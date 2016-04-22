@@ -29,8 +29,12 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1200px;
 }
 
+.hide {
+  display: none;
+}
+
 header .container,
-#navigation,
+#main-navigation, #course-navigation,
 #hero .container,
 #course-content .container,
 footer .container {
@@ -116,14 +120,14 @@ header .search input[type="search"] {
   background: #79BD9A;
 }
 
-#navigation {
+#main-navigation, #course-navigation {
   height: 39px;
   font-family: "Open Sans Condensed";
   font-weight: 700;
   text-transform: uppercase;
 }
 
-#navigation .last {
+#main-navigation .last, #course-navigation .last {
   border-right: none;
 }
 
