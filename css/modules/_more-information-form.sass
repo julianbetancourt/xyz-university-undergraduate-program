@@ -1,0 +1,32 @@
+.more-information-form
+  width: 20%
+  background: #E8F1F2
+  h2
+    margin: 0
+    background: #79BD9A
+    color: #fff
+    text-align: center
+  .form-container
+    padding: 10px
+  .label
+    display: none
+  input, textarea
+    width: 100%
+    display: block
+    border: none
+    padding: 5px 0
+  input[type="text"],
+  input[type="email"],
+  input[type="date"]
+    margin-bottom: 5px
+  input[type="checkbox"]
+    width: auto
+    display: inline-block
+    margin: 10px 0
+    & + label
+      font-size: 12px
+      margin: 10px 0
+
+@media (max-width: 968px)
+  .more-information-form
+    display: none
