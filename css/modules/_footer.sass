@@ -30,3 +30,20 @@ footer
   p
     text-align: center
     width: 100%
+
+@media (max-width: 555px)
+  footer .container
+    flex-direction: column
+  .footer--logo, .footer--info
+    width: 100%
+    position: static
+
+  .footer--logo img
+    margin: 0 auto
+    display: block
+
+  .footer--info
+    display: block
+    address, p
+      text-align: center
+      margin-top: 8px

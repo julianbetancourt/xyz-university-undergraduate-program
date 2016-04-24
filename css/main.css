@@ -68,6 +68,15 @@ footer .container {
   width: 20%;
 }
 
+@media (max-width: 950px) {
+  .main-info {
+    width: 100%;
+  }
+  .news {
+    display: none;
+  }
+}
+
 .btn {
   padding: 5px 10px;
   border: 1px solid #fff;
@@ -120,6 +129,17 @@ header .search input[type="search"] {
   margin-right: 10px;
 }
 
+@media (max-width: 540px) {
+  header {
+    padding: 15px 0;
+  }
+  .container {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .main-nav {
   background: #79BD9A;
 }
@@ -159,6 +179,15 @@ header .search input[type="search"] {
   letter-spacing: 1px;
 }
 
+@media (max-width: 1120px) {
+  #main-navigation {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
 #hero {
   height: 500px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=066c3296c39c50ff74dd939aea66ab04");
@@ -179,9 +208,6 @@ header .search input[type="search"] {
 
 .course {
   width: 60%;
-  position: relative;
-  right: 162px;
-  top: 17px;
 }
 
 .course .course--title {
@@ -226,6 +252,64 @@ header .search input[type="search"] {
   color: #fff;
 }
 
+@media (max-width: 968px) {
+  #hero {
+    height: 400px;
+  }
+  #hero .course {
+    width: 100%;
+  }
+}
+
+.more-information-form {
+  width: 20%;
+  background: #E8F1F2;
+}
+
+.more-information-form h2 {
+  margin: 0;
+  background: #79BD9A;
+  color: #fff;
+  text-align: center;
+}
+
+.more-information-form .form-container {
+  padding: 10px;
+}
+
+.more-information-form .label {
+  display: none;
+}
+
+.more-information-form input, .more-information-form textarea {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 5px 0;
+}
+
+.more-information-form input[type="text"],
+.more-information-form input[type="email"] {
+  margin-bottom: 5px;
+}
+
+.more-information-form input[type="checkbox"] {
+  width: auto;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.more-information-form input[type="checkbox"] + label {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+@media (max-width: 968px) {
+  .more-information-form {
+    display: none;
+  }
+}
+
 .course-nav {
   background: #0B486B;
   margin: 10px 0 20px;
@@ -246,7 +330,8 @@ header .search input[type="search"] {
 
 iframe {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 25px;
+  max-width: 100%;
 }
 
 .news-item {
@@ -347,4 +432,27 @@ footer .container {
 .footer--copy p {
   text-align: center;
   width: 100%;
+}
+
+@media (max-width: 555px) {
+  footer .container {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer--logo, .footer--info {
+    width: 100%;
+    position: static;
+  }
+  .footer--logo img {
+    margin: 0 auto;
+    display: block;
+  }
+  .footer--info {
+    display: block;
+  }
+  .footer--info address, .footer--info p {
+    text-align: center;
+    margin-top: 8px;
+  }
 }
