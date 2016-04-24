@@ -14,6 +14,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans Condensed";
 }
 
+p, li {
+  line-height: 1.4;
+}
+
+li {
+  margin-bottom: .5em;
+}
+
 .img-responsive {
   max-width: 100%;
 }
@@ -54,10 +62,6 @@ footer .container {
 
 .main-info {
   width: 80%;
-}
-
-.main-info p {
-  line-height: 1.6;
 }
 
 .news {
@@ -258,6 +262,32 @@ iframe {
 .news-item p, .news-item span {
   font-size: 13px;
   margin: 5px 0;
+}
+
+.curriculum table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.curriculum table td {
+  border-bottom: 1px solid;
+  padding: 5px 0;
+}
+
+.curriculum table .left {
+  width: 90%;
+  border-right: 1px solid;
+}
+
+.curriculum table .left,
+.curriculum table .table-course-title {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.curriculum table .grey {
+  background: #E8F1F2;
 }
 
 footer {
